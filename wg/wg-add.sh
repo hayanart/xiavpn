@@ -1,5 +1,5 @@
 #!/bin/bash
-# Tambah akun WireGuard - by znand-dev
+# Tambah akun WireGuard - by xiavpn
 
 [[ -f /etc/wireguard/wg0.conf ]] || {
     echo "WireGuard is not installed!"

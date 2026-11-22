@@ -1,5 +1,5 @@
 #!/bin/bash
-# Speedtest CLI - by znand-dev
+# Speedtest CLI - by xiavpn
 
 # Warna
 GREEN='\e[1;32m'

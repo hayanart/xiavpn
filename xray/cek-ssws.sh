@@ -1,5 +1,5 @@
 #!/bin/bash
-# Cek login SS WS - by znand-dev
+# Cek login SS WS - by xiavpn
 
 echo -e "🔍 Log koneksi aktif SS WS:"
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"

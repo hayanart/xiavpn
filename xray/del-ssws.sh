@@ -1,5 +1,5 @@
 #!/bin/bash
-# Hapus akun SS WS - by znand-dev
+# Hapus akun SS WS - by xiavpn
 
 read -p "Masukkan username yang ingin dihapus: " user
 config=/etc/xray/config.json

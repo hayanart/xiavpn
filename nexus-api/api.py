@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Nexus API — API order akun VPN milik sendiri untuk AutoscriptXRAY
-(fork Aethernal07/AutoscriptXRAY) di VPS user.
+Nexus API — API order akun VPN milik sendiri untuk xiavpn
+di VPS user.
 
 Pengganti API NadiaVPN: bot toko (atau script apa pun) memesan akun
 VMess/VLESS/Trojan ke server SENDIRI, tanpa reseller, tanpa potongan
@@ -17,7 +17,7 @@ Desain:
 - Auth: header `Authorization: Bearer <API_TOKEN>` dari
   /etc/nexus-api/config.env (atau env NEXUS_API_CONFIG).
 - Pembuatan akun memakai script resmi Autoscript yang sama persis
-  dengan panelbot: /etc/autoscriptvpn/xray/add-<proto>.sh
+  dengan panelbot: /etc/xiavpn/xray/add-<proto>.sh
   (stdin: username, masa aktif dalam hari).
 - Idempotent per (protocol, username): order ulang username yang sama
   mengembalikan hasil order pertama (tersimpan di state JSON),
@@ -94,7 +94,7 @@ API_TOKEN = CFG.get("API_TOKEN", "")
 BIND_HOST = CFG.get("BIND_HOST", "127.0.0.1")
 BIND_PORT = int(CFG.get("BIND_PORT", "8788"))
 SERVER_ID = CFG.get("SERVER_ID", "nexus-1")
-SCRIPT_DIR = CFG.get("SCRIPT_DIR", "/etc/autoscriptvpn/xray")
+SCRIPT_DIR = CFG.get("SCRIPT_DIR", "/etc/xiavpn/xray")
 DB_DIR = CFG.get("DB_DIR", "/etc/xray")
 DOMAIN_FILE = CFG.get("DOMAIN_FILE", "/etc/xray/domain")
 STATE_DIR = CFG.get("STATE_DIR", STATE_DIR_DEFAULT)

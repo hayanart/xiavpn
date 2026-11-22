@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# ZNANDEV XRAY PANEL
+# XIAVPN
 
 # ================= COLOR =================
 PANEL_VERSION="v2.1.1"
@@ -173,7 +173,7 @@ cut -d':' -f2 | sort -u | wc -l)
 clear
 
 echo -ne "${RED}"
-printf "⚡ Loading ZNANDEV XRAY PANEL ⚡" | type_text
+printf "⚡ Loading XIAVPN ⚡" | type_text
 echo -e "${NC}"
 
 loading "Loading System Modules"
@@ -189,7 +189,7 @@ clear
 # ================= HEADER =================
 
 echo -e "${CYAN}┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}"
-echo -e "${CYAN}┃${WHITE}          ⚡ ZNANDEV XRAY PANEL ⚡          ${CYAN}┃${NC}"
+echo -e "${CYAN}┃${WHITE}          ⚡ XIAVPN ⚡          ${CYAN}┃${NC}"
 echo -e "${CYAN}┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
 
 # ================= SYSTEM INFO =================

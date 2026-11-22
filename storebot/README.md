@@ -1,6 +1,6 @@
 # Store Bot VPN (bot toko publik)
 
-Bot Telegram publik untuk jualan akun VMess AutoscriptXRAY, meniru pola bot
+Bot Telegram publik untuk jualan akun VMess xiavpn, meniru pola bot
 auto-order: pengguna daftar sendiri, punya saldo, membeli akun dengan saldo,
 dan akun dibuat otomatis. Bot ini **terpisah** dari `panelbot/` (bot admin
 pribadi). Pembayaran otomatis via gateway **belum** dipakai — top-up bersifat
@@ -32,7 +32,7 @@ manual dan dikendalikan admin (keputusan pemilik, 2026-10-31).
 ## Install
 
 ```bash
-cd ~/AutoscriptXRAY   # repo fork ini
+cd ~/xiavpn   # repo fork ini
 git pull
 cd storebot
 bash install.sh
@@ -41,7 +41,7 @@ nano /etc/storebot/prices.json  # sesuaikan harga jual
 systemctl enable --now storebot
 ```
 
-Prasyarat: AutoscriptXRAY sudah terinstall, dan statistik kuota panelbot
+Prasyarat: xiavpn sudah terinstall, dan statistik kuota panelbot
 sudah diaktifkan (`panelbot/enable-stats.sh`) agar pemakaian kuota tampil.
 
 ## Harga

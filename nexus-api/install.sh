@@ -1,7 +1,7 @@
 #!/bin/bash
 # Installer Nexus API (API order akun VPN milik sendiri).
 # Jalankan sebagai root dari folder nexus-api/ hasil git pull:
-#   cd ~/AutoscriptXRAY/nexus-api && bash install.sh
+#   cd ~/xiavpn/nexus-api && bash install.sh
 # Aman dijalankan ulang untuk update: config & token TIDAK ditimpa.
 set -e
 cd "$(dirname "$0")"

@@ -1,6 +1,6 @@
 #!/bin/bash
 # ==========================================
-# Setup Script XRAY_AIO
+# Setup Script xiavpn
 # XRAY + WireGuard + UDP ZIVPN
 # ==========================================
 
@@ -246,18 +246,18 @@ chmod +x slowdns/*.sh
 # COPY RUNTIME SCRIPT
 # ==========================================
 
-info "Menyalin semua submenu ke /etc/autoscriptvpn/..."
+info "Menyalin semua submenu ke /etc/xiavpn/..."
 
-mkdir -p /etc/autoscriptvpn/{ssh,xray,wg,udp,tools,slowdns}
+mkdir -p /etc/xiavpn/{ssh,xray,wg,udp,tools,slowdns}
 
-cp -r ssh/* /etc/autoscriptvpn/ssh/
-cp -r xray/* /etc/autoscriptvpn/xray/
-cp -r wg/* /etc/autoscriptvpn/wg/
-cp -r udp/* /etc/autoscriptvpn/udp/
-cp -r tools/* /etc/autoscriptvpn/tools/
-cp -r slowdns/* /etc/autoscriptvpn/slowdns/
+cp -r ssh/* /etc/xiavpn/ssh/
+cp -r xray/* /etc/xiavpn/xray/
+cp -r wg/* /etc/xiavpn/wg/
+cp -r udp/* /etc/xiavpn/udp/
+cp -r tools/* /etc/xiavpn/tools/
+cp -r slowdns/* /etc/xiavpn/slowdns/
 
-chmod +x /etc/autoscriptvpn/*/*.sh
+chmod +x /etc/xiavpn/*/*.sh
 
 # ==========================================
 # AUTO MENU LOGIN

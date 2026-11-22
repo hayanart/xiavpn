@@ -1,11 +1,11 @@
-# Panel Bot Telegram — AutoscriptXRAY
+# Panel Bot Telegram — xiavpn
 
-Bot Telegram untuk mengelola server AutoscriptXRAY dari chat:
+Bot Telegram untuk mengelola server xiavpn dari chat:
 
 - **Buat Akun VMess** — ketik username, pilih masa aktif lewat tombol
   **7 / 15 / 30 hari** atau custom (1–365 hari), lalu pilih batas kuota
   **100 GB / 500 GB / 1 TB / Unlimited**. Bot menjalankan script bawaan
-  `/etc/autoscriptvpn/xray/add-vmess.sh` secara non-interaktif dan membalas
+  `/etc/xiavpn/xray/add-vmess.sh` secara non-interaktif dan membalas
   dengan link VMess WS TLS (443), WS NTLS (80), dan gRPC, lengkap dengan
   tanggal expired dari database `/etc/xray/vmess.db`.
 - **Status Server** — uptime, RAM, disk, status service Xray & NGINX,
@@ -52,7 +52,7 @@ mulai menghitung dari 0.
 ## Cara pasang (di VPS, sebagai root)
 
 ```bash
-cd ~/AutoscriptXRAY
+cd ~/xiavpn
 git pull
 cd panelbot
 bash install.sh
@@ -88,7 +88,7 @@ Lalu:
 - Log bot: `journalctl -u panelbot -f`
 - Log pengecek kuota: `journalctl -u quota-check.service`
 - Restart bot: `systemctl restart panelbot`
-- Update dari repo: `cd ~/AutoscriptXRAY && git pull && cd panelbot && bash install.sh && systemctl restart panelbot`
+- Update dari repo: `cd ~/xiavpn && git pull && cd panelbot && bash install.sh && systemctl restart panelbot`
   (file config di `/etc/panelbot/` tidak ditimpa oleh installer.)
 
 ## Keamanan
@@ -109,5 +109,5 @@ Lalu:
   `add-vless.sh` / `add-trojan.sh` / `add-ssws.sh` polanya sama
   (kuota mengikuti pola yang sama).
 - Hapus & perpanjang akun dari bot (`del-vmess.sh`, `renew-vmess.sh`).
-- Akun ZIVPN (`/etc/autoscriptvpn/udp/add-zivpn.sh`) — statistik
+- Akun ZIVPN (`/etc/xiavpn/udp/add-zivpn.sh`) — statistik
   trafiknya tidak lewat Xray, jadi kuotanya perlu mekanisme terpisah.

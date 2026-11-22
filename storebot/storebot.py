@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Bot Toko VPN (publik) untuk AutoscriptXRAY.
+Bot Toko VPN (publik) untuk xiavpn.
 
 Fitur:
 - Registrasi pengguna otomatis, kartu info (ID, status, saldo, transaksi)
@@ -36,7 +36,7 @@ DB_PATH = os.environ.get("STOREBOT_DB", "/var/lib/storebot/store.db")
 QRIS_PATH = os.environ.get("STOREBOT_QRIS", "/etc/storebot/qris.png")
 QUOTA_STATE = "/var/lib/panelbot/quota-state.json"
 
-ADD_VMESS = "/etc/autoscriptvpn/xray/add-vmess.sh"
+ADD_VMESS = "/etc/xiavpn/xray/add-vmess.sh"
 VMESS_DB = "/etc/xray/vmess.db"
 XRAY_CONFIG = "/etc/xray/config.json"
 

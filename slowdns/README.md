@@ -1,4 +1,4 @@
-# SlowDNS (DNSTT) — add-on AutoscriptXRAY
+# SlowDNS (DNSTT) — add-on xiavpn
 
 Terowongan DNS (DNSTT, public domain — David Fifield) untuk VPS ini.
 Client (aplikasi SlowDNS di Android) terhubung lewat query DNS ke
@@ -26,7 +26,7 @@ nslookup dns.slowaethernal.eu.cc
 ## 2. Install di VPS
 
 ```bash
-cd ~/AutoscriptXRAY
+cd ~/xiavpn
 git pull
 sudo bash slowdns/install-slowdns.sh
 ```

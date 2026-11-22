@@ -120,7 +120,7 @@ mv $TEMP $DB
 # REBUILD CONFIG
 # ==============================
 
-bash /root/AutoscriptXRAY/udp/rebuild-config.sh
+bash /root/xiavpn/udp/rebuild-config.sh
 
 clear
 

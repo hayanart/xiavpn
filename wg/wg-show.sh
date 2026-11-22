@@ -1,5 +1,5 @@
 #!/bin/bash
-# Lihat daftar akun aktif WireGuard - by znand-dev
+# Lihat daftar akun aktif WireGuard - by xiavpn
 
 echo -e "🔍 Daftar Akun Aktif WireGuard:"
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"

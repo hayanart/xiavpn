@@ -1,5 +1,5 @@
 #!/bin/bash
-# Atur ulang domain - by znand-dev
+# Atur ulang domain - by xiavpn
 
 # Warna
 CYAN='\e[1;36m'

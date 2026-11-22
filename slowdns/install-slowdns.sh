@@ -1,5 +1,5 @@
 #!/bin/bash
-# SlowDNS (DNSTT) add-on untuk AutoscriptXRAY — VPS UpCloud baru
+# SlowDNS (DNSTT) add-on untuk xiavpn — VPS UpCloud baru
 # Domain : slowaethernal.eu.cc
 # NS zone: slow.slowaethernal.eu.cc  (di-delegasikan ke dns.slowaethernal.eu.cc)
 #

@@ -1,6 +1,6 @@
 #!/bin/bash
 # Install WireGuard + konfigurasi awal
-# By znandev
+# By xiavpn
 
 GREEN='\033[0;32m'
 NC='\033[0m'

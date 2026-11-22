@@ -1,3 +1,3 @@
-module github.com/znand-dev/AutoscriptXRAY/internal/go
+module github.com/hayanart/xiavpn/internal/go
 
 go 1.19

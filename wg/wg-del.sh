@@ -1,5 +1,5 @@
 #!/bin/bash
-# Hapus akun WireGuard - by znand-dev
+# Hapus akun WireGuard - by xiavpn
 
 read -p "Masukkan nama user yang ingin dihapus: " user
 pubkey=$(grep -A 3 "# $user" /etc/wireguard/wg0.conf | grep PublicKey | awk '{print $3}')

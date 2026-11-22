@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Pengecek kuota VMess untuk panelbot AutoscriptXRAY.
+Pengecek kuota VMess untuk panelbot xiavpn.
 
 Dijalankan berkala oleh systemd timer (quota-check.timer, tiap 5 menit):
 

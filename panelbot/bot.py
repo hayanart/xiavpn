@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Panel Bot Telegram untuk AutoscriptXRAY (fork Aethernal07/AutoscriptXRAY).
+Panel Bot Telegram untuk xiavpn.
 
 Fitur:
 - Buat akun VMess (tombol masa aktif 7/15/30 hari atau custom,
@@ -18,8 +18,8 @@ Hanya memakai library standar Python 3 (tanpa pip install).
 Token bot dan allowlist ID Telegram dibaca dari /etc/panelbot/config.env
 (file itu diisi manual di VPS, JANGAN commit token ke repo).
 
-Bot memanggil script bawaan AutoscriptXRAY yang sudah terinstall:
-  /etc/autoscriptvpn/xray/add-vmess.sh  (input stdin: username, expired-days)
+Bot memanggil script bawaan xiavpn yang sudah terinstall:
+  /etc/xiavpn/xray/add-vmess.sh  (input stdin: username, expired-days)
 Database akun dibaca dari /etc/xray/vmess.db (format: user exp uuid).
 """
 
@@ -39,7 +39,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import quota_state  # noqa: E402
 
 CONFIG_PATH = os.environ.get("PANELBOT_CONFIG", "/etc/panelbot/config.env")
-ADD_VMESS = "/etc/autoscriptvpn/xray/add-vmess.sh"
+ADD_VMESS = "/etc/xiavpn/xray/add-vmess.sh"
 VMESS_DB = "/etc/xray/vmess.db"
 DOMAIN_FILE = "/etc/xray/domain"
 STATE_DIR = "/var/lib/panelbot"
@@ -361,7 +361,7 @@ def handle_message(msg):
 
     if text.startswith("/start") or text.startswith("/menu"):
         STATES.pop(chat_id, None)
-        send(chat_id, "Panel AutoscriptXRAY. Pilih menu:", main_menu_markup())
+        send(chat_id, "Panel xiavpn. Pilih menu:", main_menu_markup())
         return
 
     st = STATES.get(chat_id)

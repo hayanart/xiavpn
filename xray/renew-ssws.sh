@@ -1,5 +1,5 @@
 #!/bin/bash
-# Perpanjang akun SS WS - by znand-dev
+# Perpanjang akun SS WS - by xiavpn
 
 read -p "Masukkan username yang ingin diperpanjang: " user
 read -p "Tambah masa aktif (hari): " tambah

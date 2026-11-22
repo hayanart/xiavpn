@@ -1,5 +1,5 @@
 #!/bin/bash
-# Backup tool - by znand-dev
+# Backup tool - by xiavpn
 
 # Warna
 GREEN='\e[1;32m'

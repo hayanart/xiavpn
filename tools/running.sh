@@ -1,5 +1,5 @@
 #!/bin/bash
-# Submenu Status Service - by znand-dev
+# Submenu Status Service - by xiavpn
 
 # Warna
 NC='\e[0m'

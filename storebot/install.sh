@@ -1,5 +1,5 @@
 #!/bin/bash
-# Installer bot toko VPN (storebot) untuk AutoscriptXRAY.
+# Installer bot toko VPN (storebot) untuk xiavpn.
 # Jalankan sebagai root dari folder storebot/ di repo.
 set -e
 cd "$(dirname "$0")"

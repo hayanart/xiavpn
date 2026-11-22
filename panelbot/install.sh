@@ -1,7 +1,7 @@
 #!/bin/bash
-# Installer Panel Bot Telegram untuk AutoscriptXRAY.
+# Installer Panel Bot Telegram untuk xiavpn.
 # Jalankan sebagai root dari folder panelbot/ hasil git pull:
-#   cd ~/AutoscriptXRAY/panelbot && bash install.sh
+#   cd ~/xiavpn/panelbot && bash install.sh
 # Aman dijalankan ulang untuk update: config di /etc/panelbot tidak ditimpa.
 set -e
 cd "$(dirname "$0")"
