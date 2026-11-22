@@ -8,6 +8,12 @@ echo "" > /root/log-install.txt
 
 cd "$(dirname "$0")"
 
+# Installer harus non-interaktif (sekali-klik): jangan sampai apt/dpkg
+# berhenti nanya (mis. conffile) dan nungguin jawaban.
+# (Tes 2026-11-23: apt-get upgrade sempat macet ±10 mnt di prompt
+# conffile /etc/default/dropbear.)
+export DEBIAN_FRONTEND=noninteractive
+
 clear
 
 # ==========================================
@@ -120,7 +126,18 @@ iptables-persistent \
 netfilter-persistent \
 vnstat \
 openssl \
-ufw >/dev/null 2>&1
+ufw
+
+# Pastikan tool penting beneran kepasang. apt install di atas sempat
+# gagal diam-diam untuk vnstat (output dibuang ke /dev/null), jadi
+# cek ulang dan pasang yang masih hilang.
+for _tool in vnstat curl wget git; do
+    if ! command -v "$_tool" >/dev/null 2>&1; then
+        info "Memasang ulang $_tool yang belum kepasang..."
+        apt install -y "$_tool"
+    fi
+done
+unset _tool
 
 # ==========================================
 # INSTALL LINUX HEADER

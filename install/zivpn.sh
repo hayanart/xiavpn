@@ -33,7 +33,8 @@ fi
 echo -e "${YELLOW}[*] Updating system...${NC}"
 
 apt-get update -y
-apt-get upgrade -y
+# Paksa keep conffile lama tanpa nanya (jawaban N = default non-interaktif).
+apt-get -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" upgrade -y
 
 # ==============================
 # INSTALL DEPENDENCIES

@@ -20,6 +20,10 @@
 
 set -e
 
+# Installer harus non-interaktif (sekali-klik): jangan sampai apt/dpkg
+# berhenti nanya (mis. conffile) dan nungguin jawaban.
+export DEBIAN_FRONTEND=noninteractive
+
 REPO_URL="https://github.com/hayanart/xiavpn.git"
 REPO_DIR="/root/xiavpn"
 SCREEN_NAME="xiavpn-setup"
