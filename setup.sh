@@ -145,7 +145,12 @@ echo -e "${cyan}         DOMAIN SETUP${NC}"
 echo -e "${blue}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
 
-read -rp "Masukkan domain kamu : " domain
+# Domain bisa dikirim lewat env DOMAIN (dipakai installer sekali-klik),
+# kalau kosong tetap ditanya secara interaktif.
+domain="${DOMAIN:-}"
+if [[ -z "$domain" ]]; then
+    read -rp "Masukkan domain kamu : " domain
+fi
 
 if [[ -z "$domain" ]]; then
     error "Domain tidak boleh kosong!"

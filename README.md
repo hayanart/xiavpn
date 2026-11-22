@@ -30,24 +30,21 @@ menu
 
 > Note: This script must be run as root!
 
+Satu perintah (sekali klik install):
+
 ```bash
-# update
-apt update -y && apt upgrade -y
-apt install git curl screen sudo -y
-
-# disable ipv6
-sysctl -w net.ipv6.conf.all.disable_ipv6=1
-sysctl -w net.ipv6.conf.default.disable_ipv6=1
-
-# clone the repos
-git clone https://github.com/hayanart/xiavpn.git
-cd xiavpn
-
-# run main installer
-chmod +x setup.sh
-chmod +x uninstall.sh
-screen -S setup ./setup.sh
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/hayanart/xiavpn/main/install.sh)"
 ```
+
+Langsung dengan domain (tanpa ditanya lagi):
+
+```bash
+DOMAIN=contoh.com bash -c "$(curl -fsSL https://raw.githubusercontent.com/hayanart/xiavpn/main/install.sh)"
+```
+
+Installer akan memasang git/curl/screen, mematikan IPv6, mengunduh repo xiavpn, lalu menjalankan `setup.sh` di dalam screen (`xiavpn-setup`) — kalau SSH putus, balik dengan `screen -r xiavpn-setup`. Di akhir install, VPS akan reboot otomatis.
+
+Butuh curl dulu. Kalau belum ada: `apt install -y curl`
 ---
 
 ## Default Ports
